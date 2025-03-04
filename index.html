@@ -340,6 +340,17 @@
                 document.getElementById("preloader").style.display = "none";
             });
         </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+        <script>
+            window.onload = function () {
+                var grid = document.querySelector('#mixcontent');
+                var msnry = new Masonry(grid, {
+                    itemSelector: '.col-sm-4',
+                    columnWidth: '.col-sm-4',
+                    percentPosition: true
+                });
+            };
+        </script>
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
 

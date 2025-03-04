@@ -1063,6 +1063,9 @@ ul li.filter {
   font-size: medium;
 }
 
+
+/* pre */
+
 #preloader {
   position: fixed;
   width: 100%;
@@ -1086,4 +1089,23 @@ ul li.filter {
   100% {
       transform: scale(1.2);
   }
+}
+
+
+#mixcontent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Equal space between all images */
+  justify-content: center;
+  align-items: start;
+}
+
+.single_mixi_portfolio {
+  overflow: hidden;
+}
+
+.single_mixi_portfolio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
