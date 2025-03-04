@@ -40,7 +40,9 @@
         </style>
     </head>
     <body data-spy="scroll" data-target=".navbar-collapse">
-        <div class='preloader'><div class='loaded'>&nbsp;</div></div>
+        <div id="preloader">
+            <img src="assets/images/logo.png" alt="Loading..." id="preloader-logo">
+        </div>
 
         <header id="main_menu" class="header navbar-fixed-top">            
             <div class="main_menu_bg">
@@ -330,6 +332,12 @@
                     thumbnailsContainerSize: 960
 
                 });
+            });
+        </script>
+
+        <script>
+            window.addEventListener("load", function () {
+                document.getElementById("preloader").style.display = "none";
             });
         </script>
         <script src="assets/js/plugins.js"></script>
